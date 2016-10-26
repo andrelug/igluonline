@@ -1,0 +1,68 @@
+extends partials/layout
+
+block content
+    div.loader
+        div.spinner
+            div.double-bounce1
+            div.double-bounce2
+
+    include pageelements/painelheader
+    
+    div.main-container
+        header.page-header.resume-header(style="padding:150px 0;")
+            div.background-image-holder.parallax-background
+                img.background-image(alt="background Image", src="images/hero22.jpg")
+
+            div.container
+                div.row
+                    div.col-sm-12
+                        h1.text-white.space-bottom-medium Painel Bonsaits
+                        span Quanto mais sites, melhor!
+                        
+
+        div.text-banner
+            div.container
+                div.row
+                    div.col-sm-12
+                        br
+                        h2 Olá #{user.name.first}
+                        br
+                        if(user.status == 'admin')
+                            div.row
+                                div.col-md-2.col-md-offset-6
+                                    a.btn.btn-filled.btn-primary(href="/contatos") Contatos
+                                div.col-md-2
+                                    a.btn.btn-primary.btn-filled(href="/perfil", style="background-color:#2C3E50;border-color:#2C3E50;") Perfil
+                                div.col-md-2
+                                    div.btn-group(style="padding:0 5px;")
+                                        button.btn.btn-primary.dropdown-toggle(type="button", data-toggle="dropdown")
+                                            | Novo 
+                                            span.caret
+                                        ul.dropdown-menu(role="menu")
+                                            li
+                                                a(href="/blog/criar/artigo") Artigo
+                                                a(href="/blog/criar/headline") Variado (headline)
+                                                a(href="/blog/criar/link") Interessante (link)
+                            
+                        br
+                        br
+                        br
+                        if(user.status == 'admin')
+                            table.table.table-striped
+                                thead
+                                    tr
+                                        th Nome
+                                        th Email
+                                        th Data
+                                        th Status
+                                tbody
+                                    for orcs in orc
+                                        tr
+                                            td: a(href="/orcamentos/#{orcs.id}") #{orcs.nome}
+                                            td #{orcs.email}
+                                            td #{orcs.date}
+                                            td #{orcs.status}
+                        br
+                        br
+
+    include pageelements/footer	

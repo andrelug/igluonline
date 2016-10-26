@@ -1,0 +1,37 @@
+doctype html
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+html.no-js(lang="pt_BR") <!--<![endif]-->
+    head
+        include head
+
+    body
+        script.
+            window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '1519238171626381',
+                xfbml      : true,
+                version    : 'v2.1'
+            });
+            };
+
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+    block content
+
+
+    include footer
+    if(locals.single && locals.single == true)
+        script.
+            var facebookComments = $(".fb-comments");
+            var facebookLikes = $('.fb-like');
+            facebookLikes.attr("data-href", window.location.href);
+            facebookComments.attr("data-href", window.location.href);

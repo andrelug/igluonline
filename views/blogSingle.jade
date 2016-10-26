@@ -1,0 +1,54 @@
+extends partials/articleLayout
+
+block content
+
+    include pageelements/headerOverlay
+    div.main-container
+        header.title
+            div.background-image-holder
+                img.background-image(alt="Imagem de fundo", src="/uploads/#{info.cover}")
+            div.container.align-bottom
+                div.row
+                    div.col-xs-12
+                        h1.text-white #{info.title}
+                            if(locals.user && user.status == 'admin')
+                                a.btn.btn-danger.btn-filled.deletarArtigo(href="#", style="background-color: #E74C3C", data-id="#{info.id}") Deletar
+                                a.btn.btn-primary.btn-filled(href="/blog/#{info.id}/editar") Editar
+                        span.sub.alt-font.text-white 13/10/2014 - Leia em #{info.subtitle} minutos
+
+    
+        section.article-single
+            div.container
+                div.row
+                    div.col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1
+                        div.article-body
+                            !{info.text}
+
+                            div.fb-like(data-href="", data-share="true", data-width="450", data-show-faces="true")
+
+                div.row
+                    div.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2
+                        div.author-details
+                            img(alt="Autor", src="#{author.photo}")
+                            h5 #{info.author.name}
+                            p #{author.bio}
+                            ul.social-icons
+                                if(author.social.facebook.url)
+                                    li
+                                        a(href="#{author.social.facebook.url}",  target="_blank")
+                                            <i class="icon social_facebook"></i>
+                                if(author.social.twitter.url)
+                                    li
+                                        a(href="#{author.social.twitter.url}",  target="_blank")
+                                            <i class="icon social_twitter"></i>
+                                if(author.social.linkedin.url)
+                                    li
+                                        a(href="#{author.social.linkedin.url}",  target="_blank")
+                                            <i class="icon social_linkedin icon-large"></i>
+                div.row
+                    div.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2
+                        div.fb-comments(data-href="", data-colorscheme="light", data-numposts="10", data-width="100%")
+
+
+
+    include pageelements/footer

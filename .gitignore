@@ -1,0 +1,7 @@
+
+/iisnode
+/public/uploads
+/.idea
+/azure.err
+/node_modules/*
+/newrelic_agent.log
