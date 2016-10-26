@@ -4,8 +4,7 @@ var express = require('express'),
 
 if('development' == app.get('env')) {
     module.exports = {
-        'url': 'mongodb://localhost/bonsaits',
-        'url2': 'mongodb://localhost/bonsaitssessions'
+        'url': 'mongodb://andrelug:Watashiwa1@ds035177.mlab.com:35177/igluonline'
     }
 }else{
     module.exports = {

@@ -21,7 +21,7 @@ var app = express();
 // configuration ===============================================================
 mongoose.connect(configDB.url); // connect to our database
 
-var bonsaitssessions = mongoose.createConnection(configDB.url2);
+var bonsaitssessions = mongoose.createConnection(configDB.url);
 
 require('./config/passport')(passport); // pass passport for configuration
 
