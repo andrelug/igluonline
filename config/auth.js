@@ -30,7 +30,7 @@ if('development' == app.get('env')) {
 	    'facebookAuth' : {
 		    'clientID' 		: '1519238171626381', // your App ID
 		    'clientSecret' 	: '5c99dddcfef93210d4b2101c5c196d07', // your App Secret
-		    'callbackURL' 	: 'http://www.bonsaits.com/auth/facebook/callback'
+		    'callbackURL' 	: 'http://igluonline.com/auth/facebook/callback'
 	    },
 
 	    'twitterAuth' : {
