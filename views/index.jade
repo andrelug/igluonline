@@ -1,445 +1,445 @@
 extends partials/layout
 
 block content
-    
 
-    include pageelements/header
+	include pageelements/header
 
-    div.main-container
-        header.page-header.resume-header
-            div.background-image-holder.parallax-background
-                img.background-image(src="images/background.jpg", alt="Background Image")
+	div.main-container
+		header.page-header.resume-header
+			div.background-image-holder.parallax-background
+				img.background-image(src="images/background.jpg", alt="Background Image")
 
-            div.container
-                div.row
-                    div.col-sm-12.text-center
-                        h1.text-white.space-bottom-medium Fazemos WebSites
-                        span Sites institucionais, blogs, landing pages, hot pages...pode escolher
+			div.container
+				div.row
+					div.col-sm-12.text-center
+						h1.text-white.space-bottom-medium Fazemos WebSites
+						span Sites institucionais, blogs, landing pages, hot pages...pode escolher
 
-        a#sobre.in-page-link
+		a#sobre.in-page-link
 
-        section.duplicatable-content.milestones
-            div.container
-                div.row
-                    div.col-md-offset-2.col-sm-10.col-sm-offset-1.text-center.col-md-8
-                        h1 Por que nos escolher?
-                        p.lead Dedicamos anos aperfeiçoando nossas habilidades para entregar sites bonitos, funcionais, efetivos e responsivos. Tudo isso de forma bem rápida!
+		section.duplicatable-content.milestones
+			div.container
+				div.row
+					div.col-md-offset-2.col-sm-10.col-sm-offset-1.text-center.col-md-8
+						h1 Por que nos escolher?
+						p.lead Dedicamos anos aperfeiçoando nossas habilidades para entregar sites bonitos, funcionais, efetivos e responsivos. Tudo isso de forma bem rápida!
 
-                div.row
-                    div.col-md-3.col-sm-6.text-center
-                        div.feature.feature-icon-large
-                            i.icon.icon-strategy.icon-large
-                            div.pin-body
-                            div.pin-head
-                            h5 Design
-                            span Trabalhamos somente com sites que impressionam
-                            span.sub
+				div.row
+					div.col-md-3.col-sm-6.text-center
+						div.feature.feature-icon-large
+							i.icon.icon-strategy.icon-large
+							div.pin-body
+							div.pin-head
+							h5 Design
+							span Trabalhamos somente com sites que impressionam
+							span.sub
 
-                    div.col-md-3.col-sm-6.text-center
-                        div.feature.feature-icon-large
-                            i.icon.icon-profile-male.icon-large
-                            div.pin-body
-                            div.pin-head
-                            h5 Experiência de Usuário
-                            span Seus clientes e visitantes devem querer ficar no seu site
-                            span.sub
+					div.col-md-3.col-sm-6.text-center
+						div.feature.feature-icon-large
+							i.icon.icon-profile-male.icon-large
+							div.pin-body
+							div.pin-head
+							h5 Experiência de Usuário
+							span Seus clientes e visitantes devem querer ficar no seu site
+							span.sub
 
-                    div.col-md-3.col-sm-6.text-center
-                        div.feature.feature-icon-large
-                            i.icon.icon-circle-compass.icon-large
-                            div.pin-body
-                            div.pin-head
-                            h5 Detalhes
-                            span Pensamos em tudo para que você não tenha que se preocupar
-                            span.sub
+					div.col-md-3.col-sm-6.text-center
+						div.feature.feature-icon-large
+							i.icon.icon-circle-compass.icon-large
+							div.pin-body
+							div.pin-head
+							h5 Detalhes
+							span Pensamos em tudo para que você não tenha que se preocupar
+							span.sub
 
-                    div.col-md-3.col-sm-6.text-center
-                        div.feature.feature-icon-large
-                            i.icon.icon-expand.icon-large
-                            div.pin-body
-                            div.pin-head
-                            h5 Flexibilidade
-                            span Nossos sites funcionam em qualquer tamanho de tela
-                            span.sub
+					div.col-md-3.col-sm-6.text-center
+						div.feature.feature-icon-large
+							i.icon.icon-expand.icon-large
+							div.pin-body
+							div.pin-head
+							h5 Flexibilidade
+							span Nossos sites funcionam em qualquer tamanho de tela
+							span.sub
 
-        section.strip.bg-primary
-            div.container
-                div.row.clearfix
-                    form.mail-list-signup(name="insightly_web_to_contact")
-                        div.col-sm-9.col-xs-12.pull-left.clear-fix
-                            h3.text-white.pull-left <span>Saiba tudo sobre WebSites:&nbsp;</span>
-                            input(type="hidden", name="formId", value="UT0CCpgKP4FM/Td0nw8Lzg==")
-                            input(type="hidden", name="LastName", value="Lead")
-                            input(type="hidden", name="emails[0].Label", value="Work")
-                            input.signup-email-field.validate-required.validate-email(type="text", placeholder="Adicione seu e-mail aqui", name="emails[0].Value")
-                            
-                            span.enviar-confirm.text-white(style="font-size:14pt;float:right;background:none;padding:0;") Obrigado!!
-                            span.enviar-error.text-white(style="font-size:14pt;float:right;background:none;padding:0;") Oops...algo deu errado!!
-                        div.col-sm-3.col-xs12.pull-right.text-right
-                            input.btn.btn-primary.btn-filled(type="submit", value="Inscrever", style="outline:none;")
-
-
-        a#portfolio.in-page-link
-
-        section.no-pad-bottom.blog-masonry.bg-muted
-            div.container
-                div.row(style="margin-bottom:30px;")
-                    div.col-md-offset-3.col-sm-8.col-sm-offset-2.text-center.col-md-6
-                        h1 Nossos últimos projetos
-                        p.lead Tivemos a oportunidade de trabalhar com excelentes empresas e ONGs. Veja alguns de nossos trabalhos
-
-            div.projects-wrapper.clearfix
-                div.container
-                    div.row
-                        ul.filters
-                            li.active(data-filter="*") tudo
-                            li(data-filter=".development") desenvolvimento
-                            li(data-filter=".consult") consultoria
-                            li(data-filter=".design") design
-
-                div.container
-                    div.row
-                        div.blog-masonry-container
-                            div.col-md-4.col-sm-6.blog-masonry-item.development.design
-                                div.item-inner
-                                    a(href="http://www.gueime.com.br", target="_blank")
-                                        img(alt="Gueime", src="images/gueime.jpg")
-                                    div.post-title
-                                        a(href="http://www.gueime.com.br", target="_blank")
-                                            h2 Gueime
-
-                            div.col-md-4.col-sm-6.blog-masonry-item.development.consult.design
-                                div.item-inner
-                                    a(href="http://www.benvenuto.com.br", target="_blank")
-                                        img(alt="Benvenuto", src="images/benvenuto.jpg")
-                                    div.post-title
-                                        a(href="http://www.benvenuto.com.br", target="_blank")
-                                            h2 Benvenuto
-
-                            div.col-md-4.col-sm-6.blog-masonry-item.development
-                                div.item-inner
-                                    a(href="http://www.beall.com.br", target="_blank")
-                                        img(alt="BeAll", src="images/beall.jpg")
-                                    div.post-title
-                                        a(href="http://www.beall.com.br", target="_blank")
-                                            h2 BeAll
-
-                            div.col-md-4.col-sm-6.blog-masonry-item.development
-                                div.item-inner
-                                    a(href="http://www.juizdefoda.com.br", target="_blank")
-                                        img(alt="BeAll", src="images/juiz.jpg")
-                                    div.post-title
-                                        a(href="http://www.juizdefoda.com.br", target="_blank")
-                                            h2 Juiz de Foda
-
-                            div.col-md-4.col-sm-6.blog-masonry-item.consult
-                                div.item-inner
-                                    a(href="http://www.redecidada.org.br", target="_blank")
-                                        img(alt="Rede Cidadã", src="images/rede.jpg")
-                                    div.post-title
-                                        a(href="http://www.redecidada.org.br", target="_blank")
-                                            h2 Rede Cidadã
-
-                            div.col-md-4.col-sm-6.blog-masonry-item.design.development
-                                div.item-inner
-                                    a(href="http://www.doeja.com", target="_blank")
-                                        img(alt="Doe Já", src="images/doeja.jpg")
-                                    div.post-title
-                                        a(href="http://www.doeja.com", target="_blank")
-                                            h2 Doe Já
-
-                            div.col-md-4.col-sm-6.blog-masonry-item.development
-                                div.item-inner
-                                    a(href="http://www.cachacajanuaria.com.br", target="_blank")
-                                        img(alt="Doe Já", src="images/januaria.jpg")
-                                    div.post-title
-                                        a(href="http://www.cachacajanuaria.com.br", target="_blank")
-                                            h2 Cachaça Januária
-
-                            div.col-md-4.col-sm-6.blog-masonry-item.development
-                                div.item-inner
-                                    a(href="http://www.captaqui.com.br", target="_blank")
-                                        img(alt="Captaqui", src="images/captaqui.jpg")
-                                    div.post-title
-                                        a(href="http://www.cachacajanuaria.com.br", target="_blank")
-                                            h2 Captaqui
-
-                            div.col-md-4.col-sm-6.blog-masonry-item.development
-                                div.item-inner
-                                    a(href="http://blog.benvenuto.com.br/", target="_blank")
-                                        img(alt="Captaqui", src="images/blogbenvenuto.jpg")
-                                    div.post-title
-                                        a(href="http://blog.benvenuto.com.br/", target="_blank")
-                                            h2 Blog Benvenuto
+		section.strip.bg-primary
+			div.container
+				div.row.clearfix
+					form.mail-list-signup(name="insightly_web_to_contact")
+						div.col-sm-9.col-xs-12.pull-left.clear-fix
+							h3.text-white.pull-left <span>Saiba tudo sobre WebSites:&nbsp;</span>
+							input(type="hidden", name="formId", value="UT0CCpgKP4FM/Td0nw8Lzg==")
+							input(type="hidden", name="LastName", value="Lead")
+							input(type="hidden", name="emails[0].Label", value="Work")
+							input.signup-email-field.validate-required.validate-email(type="text", placeholder="Adicione seu e-mail aqui", name="emails[0].Value")
+							
+							span.enviar-confirm.text-white(style="font-size:14pt;float:right;background:none;padding:0;") Obrigado!!
+							span.enviar-error.text-white(style="font-size:14pt;float:right;background:none;padding:0;") Oops...algo deu errado!!
+						div.col-sm-3.col-xs12.pull-right.text-right
+							input.btn.btn-primary.btn-filled(type="submit", value="Inscrever", style="outline:none;")
 
 
+		a#portfolio.in-page-link
 
-        a#orcamento.in-page-link
+		section.no-pad-bottom.blog-masonry.bg-muted
+			div.container
+				div.row(style="margin-bottom:30px;")
+					div.col-md-offset-3.col-sm-8.col-sm-offset-2.text-center.col-md-6
+						h1 Nossos últimos projetos
+						p.lead Tivemos a oportunidade de trabalhar com excelentes empresas e ONGs. Veja alguns de nossos trabalhos
 
-        section.pure-text-centered
-            div.container
-                div.row
-                    div.col-sm-12.col-md-12.text-center
-                        span.sub.alt-font Calculadora
-                        h1: strong Escolha seu WebSite
-                        div.row
-                            div.col-md-8.col-md-offset-2
-                                span.sub.alt-font O orçamento criado servirá como referência para futuras conversas sobre o projeto e não representa um compromisso ou, necessariamente, sua intenção final sobre o que deseja.
+			div.projects-wrapper.clearfix
+				div.container
+					div.row
+						ul.filters
+							li.active(data-filter="*") tudo
+							li(data-filter=".development") desenvolvimento
+							li(data-filter=".consult") consultoria
+							li(data-filter=".design") design
 
-                        div.row(style="margin-top:30px;")
-                            div.col-md-8
-                                div.row.calc-buttons
-                                    h5 Tipo de WebSite
-                                    div.btn-group(style="border: border-bottom-right-radius:0;border-bottom-left-radius:0;margin-top:35px;")
-                                        a.btn.btn-primary(style="border-bottom-left-radius:0;", data-slug="site-institucional", title="Site Institucional", data-price="200000", data-description="Os sites institucionais tem como objetivo a apresentação de uma empresa ou projeto com o objetivo de mostrar os serviços oferecidos ou produtos vendidos por esta, informar seus clientes e facilitar o contato.", data-id="1")
-                                            i.icon.icon-presentation.icon-large
-                                            br
-                                            | Institucional
-                                        a.btn.btn-primary(title="Blog", data-price="150000", data-description="Seja para promover um produto ou serviço ou somente falar sobre algum assunto, o blog é a maneira mais fácil de colocar suas ideias na internet.", data-slug="blog", data-id="2")
-                                            i.icon.icon-pencil.icon-large
-                                            br
-                                            | Blog
-                                        a.btn.btn-primary(title="Landing Page", data-price="120000", data-description="Quando é apenas necessária uma página para transmitir uma informação, as landing pages são ideais e podem funcionar muito bem para shows, serviços ainda não lançados e muitos outros.", data-slug="landing-page", data-id="3")
-                                            i.icon.icon-map.icon-large
-                                            br
-                                            | Landing Page
-                                        a.btn.btn-primary(style="border-bottom-right-radius:0;", title="Hotsite", data-price="90000", data-description="Perfeitos para a anúncios e eventos, os hotsites funcionam com o objetivo de rapidamente transmitir uma ação de marketing. Normalmente possuem um tempo de vida determinado.", data-slug="hotsite", data-id="4")
-                                            i.icon.icon-megaphone.icon-large
-                                            br
-                                            | Hotsite
+				div.container
+					div.row
+						div.blog-masonry-container
+							div.col-md-4.col-sm-6.blog-masonry-item.development.design
+								div.item-inner
+									a(href="http://www.gueime.com.br", target="_blank")
+										img(alt="Gueime", src="images/gueime.jpg")
+									div.post-title
+										a(href="http://www.gueime.com.br", target="_blank")
+											h2 Gueime
 
-                                    div.btn-group.btn-calc-bottom
-                                        a.btn.btn-primary(style="border-top-left-radius:0;", title="Ebook Landing", data-price="100000", data-description="Uma grande estratégia de captar potenciais clientes é através da distribuição de ebooks interessantes ao público alvo e é necessária uma boa landing page otimizada para o trabalho.", data-slug="ebook-landing", data-id="5")
-                                            i.icon.icon-pictures.icon-large
-                                            br
-                                            | Ebook Landing
-                                        a.btn.btn-primary(title="Ecommerce", data-price="400000", data-description="Os sites de ecommerce funcionam como lojas virtuais para qualquer tipo de produto que desejar vender. São otimizadas para a venda e integradas com diversos sistemas de pagamento online.", data-slug="ecommerce", data-id="6")
-                                            i.icon.icon-wallet.icon-large
-                                            br
-                                            | Ecommerce
-                                        a.btn.btn-primary(title="Portfólio", data-price="80000", data-toggle="tooltip", data-placement="bottom", data-description="Nada chama mais atenção profisisonal do que ter seu próprio site mostrando seu currículo e portfolio de forma agradável e bonita.", data-slug="port", data-id="7")
-                                            i.icon.icon-profile-male.icon-large
-                                            br
-                                            | Portfólio
-                                        a.btn.btn-primary(style="border-top-right-radius:0;", title="Sistemas", data-price="0", data-description="Sejam sistemas mais complexos ou projetos de StartUps, a Bonsaits consegue resolver seu problema. Entre em contato conosco para mais detalhes e marcamos uma reunião para discutir suas necessidades particulares.", data-slug="outros", data-id="8")
-                                            i.icon.icon-gears.icon-large
-                                            br
-                                            | Outros
+							div.col-md-4.col-sm-6.blog-masonry-item.development.consult.design
+								div.item-inner
+									a(href="http://www.benvenuto.com.br", target="_blank")
+										img(alt="Benvenuto", src="images/benvenuto.jpg")
+									div.post-title
+										a(href="http://www.benvenuto.com.br", target="_blank")
+											h2 Benvenuto
 
-                                div.row
-                                    div.col-md-10.col-md-offset-1.highlight
-                                        div.calc-site-description
+							div.col-md-4.col-sm-6.blog-masonry-item.development
+								div.item-inner
+									a(href="http://www.beall.com.br", target="_blank")
+										img(alt="BeAll", src="images/beall.jpg")
+									div.post-title
+										a(href="http://www.beall.com.br", target="_blank")
+											h2 BeAll
 
-                                div.row
-                                    h5(style="margin-top:35px;") Hospedagem
-                                    div.btn-group.hospedagem
-                                        a.btn.btn-primary.btn-server(title="Já Contratado", data-description="Se você já tiver um servidor e só precisa instalar seu novo site nele, esta é sua opção.", data-price="15000", data-slug="jacontratado", data-id="9") Já contratado
-                                        a.btn.btn-primary.btn-server(title="Sem Preocupação (R$ 50,00 por mês)", data-description="Não quer se preocupar? Nós configuramos tudo em nosso servidor e você pode pagar a mensalidade de apenas <strong>R$ 50,00 por mês</strong> diretamente para a Bonsaits.", data-price="10000", data-slug="sempreocupacao", data-id="10") Sem preocupação
-                                        a.btn.btn-primary.btn-server(title="Quer Contratar", data-description="Podemos também contratar um serviço de sua preferência em seu nome e configurá-lo juntamente com você.", data-price="20000", data-slug="quercontratar", data-id="11") Quer contratar
+							div.col-md-4.col-sm-6.blog-masonry-item.development
+								div.item-inner
+									a(href="http://www.juizdefoda.com.br", target="_blank")
+										img(alt="BeAll", src="images/juiz.jpg")
+									div.post-title
+										a(href="http://www.juizdefoda.com.br", target="_blank")
+											h2 Juiz de Foda
 
-                                div.row
-                                    div.col-md-10.col-md-offset-1.highlight
-                                        div.hospedagem-site-description
+							div.col-md-4.col-sm-6.blog-masonry-item.consult
+								div.item-inner
+									a(href="http://www.redecidada.org.br", target="_blank")
+										img(alt="Rede Cidadã", src="images/rede.jpg")
+									div.post-title
+										a(href="http://www.redecidada.org.br", target="_blank")
+											h2 Rede Cidadã
 
-                                div.row
-                                    div.col-md-6
-                                        h5(style="margin-top:35px;") Serviços
-                                        div.btn-group-vertical
-                                            a.btn.btn-primary(title="Email", data-price="10000", data-slug="email", data-id="12")
-                                                i.icon.icon-envelope.icon-large
-                                                | Email
-                                                i.icon.icon-envelope.icon-large
-                                            span.vert-info Configurar email personalizado
-                                            a.btn.btn-primary(title="Analytics", data-price="10000", data-slug="analytics", data-id="13")
-                                                i.icon.icon-linegraph.icon-large
-                                                | Analytics
-                                                i.icon.icon-linegraph.icon-large
-                                            span.vert-info Customizar Google Analytics
-                                            a.btn.btn-primary(title="CRM", data-price="20000", data-slug="crm", data-id="14")
-                                                i.icon.icon-happy.icon-large
-                                                | CRM
-                                                i.icon.icon-happy.icon-large
-                                            span.vert-info Integrar com um CRM
-                                            a.btn.btn-primary(title="Social", data-price="20000", data-slug="social", data-id="15")
-                                                i.icon.icon-chat.icon-large
-                                                | Social
-                                                i.icon.icon-chat.icon-large
-                                            span.vert-info Otimizar Presença Digital
-                                            a.btn.btn-primary(title="Tarefas", data-price="30000", data-slug="tarefas", data-id="16")
-                                                i.icon.icon-strategy.icon-large
-                                                | Tarefas
-                                                i.icon.icon-strategy.icon-large
-                                            span.vert-info Configuração de Gerenciador de Projetos
-                                    div.col-md-6
-                                        h5(style="margin-top:35px;") Mais opções
-                                        div.btn-group-vertical
-                                            a.btn.btn-primary(title="Gateway de Pagamento", data-price="30000", data-slug="gateway", data-id="17")
-                                                i.icon.icon-lock.icon-large
-                                                | Gateway de Pagamento
-                                                i.icon.icon-lock.icon-large
-                                            span.vert-info Integração com sistema de pagamentos online
-                                            a.btn.btn-primary(title="Transferência de Conteúdo (cada)", data-price="500", data-slug="trans", data-id="18")
-                                                i.icon.icon-upload.icon-large
-                                                | Transferir Conteúdo
-                                                i.icon.icon-upload.icon-large
-                                            span.vert-info Transferir artigos de blog ou similares
-                                            a.btn.btn-primary(title="Criação de Conteúdo (cada)", data-price="5000", data-slug="content", data-id="19")
-                                                i.icon.icon-documents.icon-large
-                                                | Criação de Conteúdo
-                                                i.icon.icon-documents.icon-large
-                                            span.vert-info Desenvolvimento de conteúdo com SEO
-                                            a.btn.btn-primary(title="Aquisição de Domínios (cada - preço sem o domínio)", data-price="5000", data-slug="dominios", data-id="20")
-                                                i.icon.icon-magnifying-glass.icon-large
-                                                | Aquisição de Domínios
-                                                i.icon.icon-magnifying-glass.icon-large
-                                            span.vert-info Procuramos os melhores preços
-                                            a.btn.btn-primary(title="Outros", data-price="0", data-slug="outrosvert", data-id="21")
-                                                i.icon.icon-streetsign.icon-large
-                                                | Outros
-                                                i.icon.icon-streetsign.icon-large
-                                            span.vert-info Entramos em contato!
+							div.col-md-4.col-sm-6.blog-masonry-item.design.development
+								div.item-inner
+									a(href="http://www.doeja.com", target="_blank")
+										img(alt="Doe Já", src="images/doeja.jpg")
+									div.post-title
+										a(href="http://www.doeja.com", target="_blank")
+											h2 Doe Já
 
-                                div.row
-                                    h5(style="margin-top:35px;") Treinamento / Consultoria Digital (Via Skype)
-                                    div.btn-group.hora
-                                        a.btn.btn-primary.btn-servicos(title="Treinamento 1 hora", data-price="0", data-slug="1h", data-id="22") 1h (Grátis)
-                                        a.btn.btn-primary.btn-servicos(title="Treinamento 2 horas", data-price="20000", data-slug="2h", data-id="23") 2h
-                                        a.btn.btn-primary.btn-servicos(title="Treinamento 5 horas", data-price="40000", data-slug="5h", data-id="24") 5h
-                                        a.btn.btn-primary.btn-servicos(title="Treinamento 10 horas", data-price="70000", data-slug="10h", data-id="25") 10h
+							div.col-md-4.col-sm-6.blog-masonry-item.development
+								div.item-inner
+									a(href="http://www.cachacajanuaria.com.br", target="_blank")
+										img(alt="Doe Já", src="images/januaria.jpg")
+									div.post-title
+										a(href="http://www.cachacajanuaria.com.br", target="_blank")
+											h2 Cachaça Januária
 
-                            dic.col-md-4
-                                div.row.calc-head
-                                    h4 <strong>Total:</strong> R$ 
-                                        span 0,00
+							div.col-md-4.col-sm-6.blog-masonry-item.development
+								div.item-inner
+									a(href="http://www.captaqui.com.br", target="_blank")
+										img(alt="Captaqui", src="images/captaqui.jpg")
+									div.post-title
+										a(href="http://www.cachacajanuaria.com.br", target="_blank")
+											h2 Captaqui
 
-                                div.row.calc-body
-                                    table.table.table-striped.table-calc
-                                        thead
-                                            tr
-                                                th Serviço
-                                                th Quantidade
-                                                th Preço (R$)
-                                        tbody.t-body
-                                            tr
-                                                td.calc-placeholder(colspan="3") Comece escolhento seu site ao lado!
-
-                                        tfooter
-                                            tr
-                                                th(colspan="2") Itens:
-                                                th.calc-total R$ <span>0</span>
-                                            tr(style="height:59px;")
-                                                th(colspan="3", style="text-align:center;")
-                                                    form#cupom
-                                                        div.row
-                                                            div.col-md-6
-                                                                input.cupon-field(type="text", name="cupom", placeholder="Adicione seu cupom")
-                                                            div.col-md-6
-                                                                input(type="submit", value="Adicionar").btn.btn-filled.btn-primary
-
-
-                                            tr
-                                                th(colspan="2") Total:
-                                                th R$ <span class="total-final">0</span>
-
-                                div.row
-                                    h4 Suas informações
-                                    br
-                                    form.insight(name="insightly_web_to_contact")
-                                        input(type="hidden", name="formId", value="UT0CCpgKP4FM/Td0nw8Lzg==")
-                                        input.contato-nome(type="text", name="FirstName", placeholder="Seu nome")
-                                        input(type="hidden", name="LastName", value="Orcamento")
-                                        input(type="hidden", name="emails[0].Label", value="Work")
-                                        input.contato-email(type="text", placeholder="Seu email", name="emails[0].Value")
-                                    input.form-terms(type="checkbox", name="termos", style="margin-right:10px;margin-top:10px;")
-                                    | Concordo com os <a href="/termos-de-uso" data-toggle="modal" data-target="#termos">Termos de Uso</a>  
-                                    a.btn.btn-primary.btn-filled.btn-block.enviar-orcamento Enviar Orçamento
-                                    div.enviar-confirm A Bonsaits agradece seu interesse! <br>Entraremos em contato em breve.
-                                    div.enviar-complete Por favor preencha seu nome e email
-                                    div.enviar-itens Por favor adicione algum serviço ou WebSite ao lado para continuar
-                                    div.enviar-error Ops. Aparentemente houve um erro.<br> Por favor tente novamente
-                                    div.enviar-terms Por favor concorde com os termos de uso
-
-
-        a#contato.in-page-link
-
-        section.contact-center
-            div.container
-                div.row
-                    div.col-md-offset-3.col-sm-8.col-sm-offset-2.text-center.col-md-6
-                        h1 Contato
-                        p.lead Ficaremos muito felizes com sua mensagem. Fique à vontade para entrar em contato a qualquer momento. Responderemos rapidamente suas dúvidas.
-
-                div.row
-                    div.col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3
-                        div.form-wrapper.clearfix
-                            form.form-contact.email-form(name="insightly_web_to_contact")
-                                div.inputs-wrapper
-                                    input(type="hidden", name="formId", value="UT0CCpgKP4FM/Td0nw8Lzg==")
-                                    input(type="hidden", name="LastName", value="Contato")
-                                    input(type="hidden", name="emails[0].Label", value="Work")
-                                    input.form-name.validate-required(type="text", placeholder="Nome", name="FirstName")
-                                    input.form-email.validate-required(type="text", placeholder="Email", name="emails[0].Value")
-                                    textarea.form-message.validate-required(name="message", placeholder="Mensagem")
-
-                                input.send-form(type="submit", value="Enviar")
-                                div.form-success
-                                    span.text-white Mensagem enviada - Obrigado!
-                                div.form-error
-                                    span.text-white Por favor complete os campos acima
-
-
-        a#faq.in-page-link
-
-        section.accordion-section
-            div.container
-                div.row
-                    div.col-sm-5.align-vertical.no-align-mobile.col-md-4
-                        ul.icons-large
-                            li
-                                i.icon.icon-tools-2.icon-large
-                            li
-                                i.icon.icon-lightbulb.icon-large
-                            li
-                                i.icon.icon-scissors.icon-large
-
-                        h1.no-margin-bottom Perguntas Frequentes
-
-                    div.col-sm-7.col-md-4
-                        ul.accordion
-                            li.active
-                                div.title
-                                    span Quero outro tipo de site que não está previsto no orçamento
-                                div.text
-                                    p: span Infelizmente no presente momento estamos apenas aceitando os tipos previstos em nosso sistema de orçamentos automático.
-
-                            li
-                                div.title
-                                    span Posso negociar o valor do orçamento?
-                                div.text
-                                    p: span Os valores de nossos orçamentos são calculados de acordo com vários fatores como tempo de trabalho, dificuldade, práticas do mercado, etc.&nbsp;
-                                    p: span Contudo, enviamos cupons de desconto para alguns casos especiais. Caso queira saber mais as condições, nos envie uma mensagem que termos prazer em explicar melhor.
-
-                            li
-                                div.title
-                                    span Posso usar meu próprio Design?
-                                div.text
-                                    p: span Com certeza! Contudo, pedimos que nos envie primeiramente para analisarmos e conferirmos se está de acordo com as melhores práticas de mercado para seu negócio
-                                    p: span Colocamos o design como aspecto fundamental de nosso processo de desenvolvimento pois muitas vezes é ele que irá destacar positivamente seu produto final.
-
-                            li
-                                div.title
-                                    span Como realizam a hospedagem?
-                                div.text
-                                    p: span Todos os sites hospedados por nós são colocados em um VPS (Virtual Private Server) com IP dedicado. Isto é, ele não compartilha recursos computacionais com nenhum outro.
-                                    p: span Como administramos nossos servidores, aumentamos suas capacidades de acordo com a necessidade e aumento de tráfego. Isso tudo para que você nunca tenha um site fora do ar ou lento.
-
-
-                    div.hidden-sm.align-vertical.no-align-movile.col-md-4
-                        div.feature
-                            h5 Outras Questões
-                            p Se você tiver qualquer outra dúvida, não deixe de nos enviar uma mensagem que solucionamos na hora!
+							div.col-md-4.col-sm-6.blog-masonry-item.development
+								div.item-inner
+									a(href="http://blog.benvenuto.com.br/", target="_blank")
+										img(alt="Captaqui", src="images/blogbenvenuto.jpg")
+									div.post-title
+										a(href="http://blog.benvenuto.com.br/", target="_blank")
+											h2 Blog Benvenuto
 
 
 
+		a#orcamento.in-page-link
 
-    include pageelements/footer	
+		section.pure-text-centered
+			div.container
+				div.row
+					div.col-sm-12.col-md-12.text-center
+						span.sub.alt-font Calculadora
+						h1: strong Escolha seu WebSite
+						div.row
+							div.col-md-8.col-md-offset-2
+								span.sub.alt-font O orçamento criado servirá como referência para futuras conversas sobre o projeto e não representa um compromisso ou, necessariamente, sua intenção final sobre o que deseja.
+
+						div.row(style="margin-top:30px;")
+							div.col-md-8
+								div.row.calc-buttons
+									h5 Tipo de WebSite
+									div.btn-group(style="border: border-bottom-right-radius:0;border-bottom-left-radius:0;margin-top:35px;")
+										a.btn.btn-primary(style="border-bottom-left-radius:0;", data-slug="site-institucional", title="Site Institucional", data-price="200000", data-description="Os sites institucionais tem como objetivo a apresentação de uma empresa ou projeto com o objetivo de mostrar os serviços oferecidos ou produtos vendidos por esta, informar seus clientes e facilitar o contato.", data-id="1")
+											i.icon.icon-presentation.icon-large
+											br
+											| Institucional
+										a.btn.btn-primary(title="Blog", data-price="150000", data-description="Seja para promover um produto ou serviço ou somente falar sobre algum assunto, o blog é a maneira mais fácil de colocar suas ideias na internet.", data-slug="blog", data-id="2")
+											i.icon.icon-pencil.icon-large
+											br
+											| Blog
+										a.btn.btn-primary(title="Landing Page", data-price="120000", data-description="Quando é apenas necessária uma página para transmitir uma informação, as landing pages são ideais e podem funcionar muito bem para shows, serviços ainda não lançados e muitos outros.", data-slug="landing-page", data-id="3")
+											i.icon.icon-map.icon-large
+											br
+											| Landing Page
+										a.btn.btn-primary(style="border-bottom-right-radius:0;", title="Hotsite", data-price="90000", data-description="Perfeitos para a anúncios e eventos, os hotsites funcionam com o objetivo de rapidamente transmitir uma ação de marketing. Normalmente possuem um tempo de vida determinado.", data-slug="hotsite", data-id="4")
+											i.icon.icon-megaphone.icon-large
+											br
+											| Hotsite
+
+									div.btn-group.btn-calc-bottom
+										a.btn.btn-primary(style="border-top-left-radius:0;", title="Ebook Landing", data-price="100000", data-description="Uma grande estratégia de captar potenciais clientes é através da distribuição de ebooks interessantes ao público alvo e é necessária uma boa landing page otimizada para o trabalho.", data-slug="ebook-landing", data-id="5")
+											i.icon.icon-pictures.icon-large
+											br
+											| Ebook Landing
+										a.btn.btn-primary(title="Ecommerce", data-price="400000", data-description="Os sites de ecommerce funcionam como lojas virtuais para qualquer tipo de produto que desejar vender. São otimizadas para a venda e integradas com diversos sistemas de pagamento online.", data-slug="ecommerce", data-id="6")
+											i.icon.icon-wallet.icon-large
+											br
+											| Ecommerce
+										a.btn.btn-primary(title="Portfólio", data-price="80000", data-toggle="tooltip", data-placement="bottom", data-description="Nada chama mais atenção profisisonal do que ter seu próprio site mostrando seu currículo e portfolio de forma agradável e bonita.", data-slug="port", data-id="7")
+											i.icon.icon-profile-male.icon-large
+											br
+											| Portfólio
+										a.btn.btn-primary(style="border-top-right-radius:0;", title="Sistemas", data-price="0", data-description="Sejam sistemas mais complexos ou projetos de StartUps, a Bonsaits consegue resolver seu problema. Entre em contato conosco para mais detalhes e marcamos uma reunião para discutir suas necessidades particulares.", data-slug="outros", data-id="8")
+											i.icon.icon-gears.icon-large
+											br
+											| Outros
+
+								div.row
+									div.col-md-10.col-md-offset-1.highlight
+										div.calc-site-description
+
+								div.row
+									h5(style="margin-top:35px;") Hospedagem
+									div.btn-group.hospedagem
+										a.btn.btn-primary.btn-server(title="Já Contratado", data-description="Se você já tiver um servidor e só precisa instalar seu novo site nele, esta é sua opção.", data-price="15000", data-slug="jacontratado", data-id="9") Já contratado
+										a.btn.btn-primary.btn-server(title="Sem Preocupação (R$ 50,00 por mês)", data-description="Não quer se preocupar? Nós configuramos tudo em nosso servidor e você pode pagar a mensalidade de apenas <strong>R$ 50,00 por mês</strong> diretamente para a Bonsaits.", data-price="10000", data-slug="sempreocupacao", data-id="10") Sem preocupação
+										a.btn.btn-primary.btn-server(title="Quer Contratar", data-description="Podemos também contratar um serviço de sua preferência em seu nome e configurá-lo juntamente com você.", data-price="20000", data-slug="quercontratar", data-id="11") Quer contratar
+
+								div.row
+									div.col-md-10.col-md-offset-1.highlight
+										div.hospedagem-site-description
+
+								div.row
+									div.col-md-6
+										h5(style="margin-top:35px;") Serviços
+										div.btn-group-vertical
+											a.btn.btn-primary(title="Email", data-price="10000", data-slug="email", data-id="12")
+												i.icon.icon-envelope.icon-large
+												| Email
+												i.icon.icon-envelope.icon-large
+											span.vert-info Configurar email personalizado
+											a.btn.btn-primary(title="Analytics", data-price="5000", data-slug="analytics", data-id="13")
+												i.icon.icon-linegraph.icon-large
+												| Analytics
+												i.icon.icon-linegraph.icon-large
+											span.vert-info Customizar Google Analytics
+											a.btn.btn-primary(title="CRM", data-price="20000", data-slug="crm", data-id="14")
+												i.icon.icon-happy.icon-large
+												| CRM
+												i.icon.icon-happy.icon-large
+											span.vert-info Integrar com um CRM
+											a.btn.btn-primary(title="Social", data-price="20000", data-slug="social", data-id="15")
+												i.icon.icon-chat.icon-large
+												| Social
+												i.icon.icon-chat.icon-large
+											span.vert-info Otimizar Presença Digital
+											a.btn.btn-primary(title="Tarefas", data-price="30000", data-slug="tarefas", data-id="16")
+												i.icon.icon-strategy.icon-large
+												| Tarefas
+												i.icon.icon-strategy.icon-large
+											span.vert-info Configuração de Gerenciador de Projetos
+									div.col-md-6
+										h5(style="margin-top:35px;") Mais opções
+										div.btn-group-vertical
+											a.btn.btn-primary(title="Gateway de Pagamento", data-price="30000", data-slug="gateway", data-id="17")
+												i.icon.icon-lock.icon-large
+												| Gateway de Pagamento
+												i.icon.icon-lock.icon-large
+											span.vert-info Integração com sistema de pagamentos online
+											a.btn.btn-primary(title="Transferência de Conteúdo (cada)", data-price="500", data-slug="trans", data-id="18")
+												i.icon.icon-upload.icon-large
+												| Transferir Conteúdo
+												i.icon.icon-upload.icon-large
+											span.vert-info Transferir artigos de blog ou similares
+											a.btn.btn-primary(title="Criação de Conteúdo (cada)", data-price="5000", data-slug="content", data-id="19")
+												i.icon.icon-documents.icon-large
+												| Criação de Conteúdo
+												i.icon.icon-documents.icon-large
+											span.vert-info Desenvolvimento de conteúdo com SEO
+											a.btn.btn-primary(title="Aquisição de Domínios (cada - preço sem o domínio)", data-price="5000", data-slug="dominios", data-id="20")
+												i.icon.icon-magnifying-glass.icon-large
+												| Aquisição de Domínios
+												i.icon.icon-magnifying-glass.icon-large
+											span.vert-info Procuramos os melhores preços
+											a.btn.btn-primary(title="Outros", data-price="0", data-slug="outrosvert", data-id="21")
+												i.icon.icon-streetsign.icon-large
+												| Outros
+												i.icon.icon-streetsign.icon-large
+											span.vert-info Entramos em contato!
+
+								div.row
+									h5(style="margin-top:35px;") Treinamento / Consultoria Digital (Via Skype)
+									div.btn-group.hora
+										a.btn.btn-primary.btn-servicos(title="Treinamento 1 hora", data-price="0", data-slug="1h", data-id="22") 1h (Grátis)
+										a.btn.btn-primary.btn-servicos(title="Treinamento 2 horas", data-price="20000", data-slug="2h", data-id="23") 2h
+										a.btn.btn-primary.btn-servicos(title="Treinamento 5 horas", data-price="45000", data-slug="5h", data-id="24") 5h
+										a.btn.btn-primary.btn-servicos(title="Treinamento 10 horas", data-price="80000", data-slug="10h", data-id="25") 10h
+
+							dic.col-md-4
+								div.row.calc-head
+									h4 <strong>Total:</strong> R$ 
+										span 0,00
+
+								div.row.calc-body
+									table.table.table-striped.table-calc
+										thead
+											tr
+												th Serviço
+												th Quantidade
+												th Preço (R$)
+										tbody.t-body
+											tr
+												td.calc-placeholder(colspan="3") Comece escolhento seu site ao lado!
+
+										tfooter
+											tr
+												th(colspan="2") Itens:
+												th.calc-total <span>0</span>
+											tr(style="height:59px;")
+												th(colspan="3", style="text-align:center;")
+													form#cupom
+														div.row
+															div.col-md-6
+																input.cupon-field(type="text", name="cupom", placeholder="Adicione seu cupom")
+															div.col-md-6
+																input(type="submit", value="Adicionar").btn.btn-filled.btn-primary
+
+
+											tr
+												th(colspan="2") Total:
+												th A partir de <span class="total-final">0</span>
+
+								div.row
+									h4 Suas informações
+									br
+									form.insight(name="insightly_web_to_contact")
+										input(type="hidden", name="formId", value="UT0CCpgKP4FM/Td0nw8Lzg==")
+										input.contato-nome(type="text", name="FirstName", placeholder="Seu nome")
+										input.contato-phone(type="text", name="telefone", placeholder="Seu telefone")
+										input(type="hidden", name="LastName", value="Orcamento")
+										input(type="hidden", name="emails[0].Label", value="Work")
+										input.contato-email(type="text", placeholder="Seu email", name="emails[0].Value")
+									input.form-terms(type="checkbox", name="termos", style="margin-right:10px;margin-top:10px;")
+									| Concordo com os <a href="/termos-de-uso" data-toggle="modal" data-target="#termos">Termos de Uso</a>  
+									a.btn.btn-primary.btn-filled.btn-block.enviar-orcamento Enviar Orçamento
+									div.enviar-confirm A Bonsaits agradece seu interesse! <br>Entraremos em contato em breve.
+									div.enviar-complete Por favor preencha seu nome, telefone e email
+									div.enviar-itens Por favor adicione algum serviço ou WebSite ao lado para continuar
+									div.enviar-error Ops. Aparentemente houve um erro.<br> Por favor tente novamente
+									div.enviar-terms Por favor concorde com os termos de uso
+
+
+		a#contato.in-page-link
+
+		section.contact-center
+			div.container
+				div.row
+					div.col-md-offset-3.col-sm-8.col-sm-offset-2.text-center.col-md-6
+						h1 Contato
+						p.lead Ficaremos muito felizes com sua mensagem. Fique à vontade para entrar em contato a qualquer momento. Responderemos rapidamente suas dúvidas.
+
+				div.row
+					div.col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3
+						div.form-wrapper.clearfix
+							form.form-contact.email-form(name="insightly_web_to_contact")
+								div.inputs-wrapper
+									input(type="hidden", name="formId", value="UT0CCpgKP4FM/Td0nw8Lzg==")
+									input(type="hidden", name="LastName", value="Contato")
+									input(type="hidden", name="emails[0].Label", value="Work")
+									input.form-name.validate-required(type="text", placeholder="Nome", name="FirstName")
+									input.form-email.validate-required(type="text", placeholder="Email", name="emails[0].Value")
+									textarea.form-message.validate-required(name="message", placeholder="Mensagem")
+
+								input.send-form(type="submit", value="Enviar")
+								div.form-success
+									span.text-white Mensagem enviada - Obrigado!
+								div.form-error
+									span.text-white Por favor complete os campos acima
+
+
+		a#faq.in-page-link
+
+		section.accordion-section
+			div.container
+				div.row
+					div.col-sm-5.align-vertical.no-align-mobile.col-md-4
+						ul.icons-large
+							li
+								i.icon.icon-tools-2.icon-large
+							li
+								i.icon.icon-lightbulb.icon-large
+							li
+								i.icon.icon-scissors.icon-large
+
+						h1.no-margin-bottom Perguntas Frequentes
+
+					div.col-sm-7.col-md-4
+						ul.accordion
+							li.active
+								div.title
+									span Quero outro tipo de site que não está previsto no orçamento
+								div.text
+									p: span Infelizmente no presente momento estamos apenas aceitando os tipos previstos em nosso sistema de orçamentos automático.
+
+							li
+								div.title
+									span Posso negociar o valor do orçamento?
+								div.text
+									p: span Os valores de nossos orçamentos são calculados de acordo com vários fatores como tempo de trabalho, dificuldade, práticas do mercado, etc.&nbsp;
+									p: span Contudo, enviamos cupons de desconto para alguns casos especiais. Caso queira saber mais as condições, nos envie uma mensagem que termos prazer em explicar melhor.
+
+							li
+								div.title
+									span Posso usar meu próprio Design?
+								div.text
+									p: span Com certeza! Contudo, pedimos que nos envie primeiramente para analisarmos e conferirmos se está de acordo com as melhores práticas de mercado para seu negócio
+									p: span Colocamos o design como aspecto fundamental de nosso processo de desenvolvimento pois muitas vezes é ele que irá destacar positivamente seu produto final.
+
+							li
+								div.title
+									span Como realizam a hospedagem?
+								div.text
+									p: span Todos os sites hospedados por nós são colocados em um VPS (Virtual Private Server) com IP dedicado. Isto é, ele não compartilha recursos computacionais com nenhum outro.
+									p: span Como administramos nossos servidores, aumentamos suas capacidades de acordo com a necessidade e aumento de tráfego. Isso tudo para que você nunca tenha um site fora do ar ou lento.
+
+
+					div.hidden-sm.align-vertical.no-align-movile.col-md-4
+						div.feature
+							h5 Outras Questões
+							p Se você tiver qualquer outra dúvida, não deixe de nos enviar uma mensagem que solucionamos na hora!
+
+
+
+
+	include pageelements/footer	

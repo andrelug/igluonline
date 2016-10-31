@@ -13,6 +13,7 @@ var UserSchema = new mongoose.Schema({
     status: {type: String, default: "user"},
     birthDate: Date,
     email: {type: String},
+	phone: String,
     gender: String,
     site: String,
     message: String,
@@ -56,7 +57,7 @@ var UserSchema = new mongoose.Schema({
     cupons: {
         codigo: String,
         valor: Number,
-        usados: Number    
+        usados: Number
     },
     deleted: {type: Boolean, default: false}
 });

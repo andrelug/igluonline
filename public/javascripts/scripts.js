@@ -321,7 +321,7 @@ $(document).ready(function () {
                             setTimeout(function () { thisForm.find('.form-success').fadeOut(500); }, 5000);
                         }
                     }
-                    
+
                     // If error text was returned, put the text in the .form-error div and show it.
                     else {
                         // Keep the current error text in a data attribute on the form
@@ -500,7 +500,7 @@ function alignVertical(){
 			var padAmount = (parentHeight / 2) - (height/2);
 			that.css('padding-top', padAmount);
 		});
-	
+
 }
 
 function alignBottom(){
@@ -526,7 +526,7 @@ function formatReal( int )
         tmp = tmp.replace(/([0-9]{2})$/g, ",$1");
         if( tmp.length > 6 )
                 tmp = tmp.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1,$2");
- 
+
         return tmp;
 }
 function calcFinal () {
@@ -538,7 +538,7 @@ function calcFinal () {
             $('.total-final').text(formatReal("000"));
         }
     }
-    
+
 }
 
 /* TIPO DE SITE */
@@ -698,7 +698,7 @@ $('.enviar-orcamento').on('click', function () {
         $.ajax({
             type: "POST",
             url: "/orcamento",
-            data: { str: str, nome: $('.contato-nome').val(), email: $('.contato-email').val(), cupon: cupon }
+            data: { str: str, nome: $('.contato-nome').val(), email: $('.contato-email').val(), cupon: cupon, phone: $('.contato-phone').val() }
         }).done(function (data) {
             if (data == "OK") {
                 $(thisone).addClass('disabled');
@@ -742,14 +742,14 @@ $('#cupom').submit(function () {
 /* DELETAR ORCAMENTO */
 $('#deletarOrcamento').submit(function () {
     var id = {id: $(this).find('input').attr('data-idorc') }
-    
+
     $.ajax({
         type: 'POST',
         url: '/deleteOrcamento',
         data: id
     }).done(function (data) {
         if (data == "OK") {
-            window.location.replace("http://www.bonsaits.com/painel");
+            window.location.replace("http://igluonline.com/painel");
         } else {
             $('.deleteError').show();
         }
@@ -761,7 +761,7 @@ $('#deletarOrcamento').submit(function () {
 /* TROCAR STATUS */
 $('#selectStatus').on('change', function () {
     var status = {status: $(this).find('option:selected').text(), id: $('#deletarOrcamento').find('input').attr('data-idorc')}
-    
+
     $.ajax({
         type: 'POST',
         url: '/changeStatus',
@@ -808,7 +808,7 @@ $('.deletarArtigo').on('click', function () {
             data: {id: id}
         }).done(function(done){
             if(done == "OK"){
-                window.location.replace("http://www.bonsaits.com/painel");
+                window.location.replace("http://igluonline.com/painel");
             }
         });
     }

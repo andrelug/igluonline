@@ -6,6 +6,7 @@ var OrcamentoSchema = new mongoose.Schema({
     numbers: [],
     nome: String,
     email: String,
+	phone: String,
     cupom: String,
     status: String
 });
