@@ -3573,12 +3573,12 @@ footer.short-2 .contact-action:hover {
 }
 .blog-masonry-item .post-title {
   background: #fff;
-  padding: 28px 32px 32px 32px;
+  padding: 13px 23px 2px 32px;
   position: relative;
 }
 .blog-masonry-item h2 {
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 20px;
   margin-bottom: 16px;
 }
 .blog-masonry-item p {
