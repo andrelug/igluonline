@@ -1,0 +1,29 @@
+{
+  "lang": "pt",
+  "dir": "ltr",
+  "name": "Iglu Online Websites",
+  "description": "Fazemos WebSites Sites institucionais, blogs, landing pages, hot pages...pode escolher!",
+  "short_name": "Iglu",
+  "icons": [{
+    "src": "icon/lowres.webp",
+    "sizes": "64x64",
+    "type": "https://scontent.fcwb1-1.fna.fbcdn.net/v/t1.0-9/13419236_663101960495071_9134627774741191113_n.jpg?oh=b57f15e9ba3871d6c3bdb98b170112db&oe=588B8AC5"
+  },{
+    "src": "https://scontent.fcwb1-1.fna.fbcdn.net/v/t1.0-9/13419236_663101960495071_9134627774741191113_n.jpg?oh=b57f15e9ba3871d6c3bdb98b170112db&oe=588B8AC5",
+    "sizes": "64x64"
+  }, {
+    "src": "https://scontent.fcwb1-1.fna.fbcdn.net/v/t1.0-9/13419236_663101960495071_9134627774741191113_n.jpg?oh=b57f15e9ba3871d6c3bdb98b170112db&oe=588B8AC5",
+    "sizes": "128x128"
+  }],
+  "scope": "/",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "theme_color": "aliceblue",
+  "background_color": "blue",
+  "screenshots": [{
+    "src": "http://image.prntscr.com/image/88c26c46f55b4e9ebb4e7348e5f5d1a5.png",
+    "sizes": "640x480",
+    "type": "image/jpeg"
+  }]
+}
