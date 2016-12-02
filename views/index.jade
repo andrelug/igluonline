@@ -61,21 +61,30 @@ block content
 							span Nossos sites funcionam em qualquer tamanho de tela
 							span.sub
 
+
 		section.strip.bg-primary
 			div.container
 				div.row.clearfix
-					form.mail-list-signup(name="insightly_web_to_contact")
+					form.mail-list-signup(autocomplete="false" role="form" method="post" action="http://markeginiglu.eastus.cloudapp.azure.com/form/submit?formId=5" id="mauticform_siteigluwebsites" data-mautic-form="siteigluwebsites")
+						div.mauticform-error#mauticform_siteigluwebsites_error
+						div.mauticform-message#mauticform_siteigluwebsites_message
+						div.mauticform-innerform
 						div.col-sm-9.col-xs-12.pull-left.clear-fix
-							h3.text-white.pull-left <span>Saiba tudo sobre WebSites:&nbsp;</span>
+							h3.text-white.pull-left <span>Receba novidades e ofertas da Iglu:&nbsp;</span>
 							input(type="hidden", name="formId", value="UT0CCpgKP4FM/Td0nw8Lzg==")
 							input(type="hidden", name="LastName", value="Lead")
 							input(type="hidden", name="emails[0].Label", value="Work")
-							input.signup-email-field.validate-required.validate-email(type="text", placeholder="Adicione seu e-mail aqui", name="emails[0].Value")
+							
+							input.mauticform-input.signup-email-field.validate-required.validate-email#mauticform_input_siteigluwebsites_email(type="email", placeholder="Adicione seu e-mail aqui", name="mauticform[email]")
 							
 							span.enviar-confirm.text-white(style="font-size:14pt;float:right;background:none;padding:0;") Obrigado!!
 							span.enviar-error.text-white(style="font-size:14pt;float:right;background:none;padding:0;") Oops...algo deu errado!!
 						div.col-sm-3.col-xs12.pull-right.text-right
-							input.btn.btn-primary.btn-filled(type="submit", value="Inscrever", style="outline:none;")
+							button#mauticform_input_siteigluwebsites_submit.btn.btn-primary.btn-filled.mauticform-button(type="submit", name="mauticform[submit]", style="outline:none;background-color:transparent;border:2px solid white;", value="1") INSCREVER
+							
+						input(type="hidden", name="mauticform[formId]", id="mauticform_siteigluwebsites_id", value="5")
+						input(type="hidden", name="mauticform[return]", id="mauticform_siteigluwebsites_return", value="")
+						input(type="hidden", name="mauticform[formName]", id="mauticform_siteigluwebsites_name", value="siteigluwebsites")
 
 
 		a#portfolio.in-page-link

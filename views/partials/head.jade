@@ -41,3 +41,21 @@ script.
 	js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=1519238171626381&version=v2.0";
 	fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));
+
+
+script.
+	if (typeof MauticSDKLoaded == 'undefined') {
+	    var MauticSDKLoaded = true;
+	    var head            = document.getElementsByTagName('head')[0];
+	    var script          = document.createElement('script');
+	    script.type         = 'text/javascript';
+	    script.src          = 'http://markeginiglu.eastus.cloudapp.azure.com/media/js/mautic-form.js';
+	    script.onload       = function() {
+	        MauticSDK.onLoad();
+	    };
+	    head.appendChild(script);
+	    var MauticDomain = 'http://markeginiglu.eastus.cloudapp.azure.com';
+	    var MauticLang   = {
+	        'submittingMessage': "Por favor aguarde..."
+	    }
+	}
