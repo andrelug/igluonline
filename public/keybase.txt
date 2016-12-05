@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/andrelug
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://igluonline.com
+  * I am andrelug (https://keybase.io/andrelug) on keybase.
+  * I have a public key with fingerprint 6950 267C 3323 A537 223E  DB25 BCA1 4F84 3F8D C8A4
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101bf5bcdfac36789bde73e26914d5fd322b94326f0f45400b1e384e1efb80036a70a",
+            "fingerprint": "6950267c3323a537223edb25bca14f843f8dc8a4",
+            "host": "keybase.io",
+            "key_id": "bca14f843f8dc8a4",
+            "kid": "0101bf5bcdfac36789bde73e26914d5fd322b94326f0f45400b1e384e1efb80036a70a",
+            "uid": "9a9d1350d2942fa9930a00fa6f93eb19",
+            "username": "andrelug"
+        },
+        "service": {
+            "hostname": "igluonline.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1480906237,
+    "expire_in": 157680000,
+    "prev": "d0526ae597b7f08a943675a8fefa2a39e9886cd02d833b902a770da99a3e2295",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMIqAnicrVJbSBVBGD5mZhml+CB1MqpNLE1tdmZvc7pRCIEZXUAxqA6zO7OnxdPu
+cc85lpkP3SiLInqqpIcoSQOxG1EQlmJJSmKi0p2op+hGZZma1azUW489DTPzfd//
+fR9/+7REX0pC44/Cb6Pqlb6ErtaTcV9ZYf9YtaA7tEoIVAvlbPxgYcqisWC5RYWA
+AEQg6qasG9QkBlJUDeuUqYhBBYsSlU2KINSxhKBiAlOSJQB0kSFNYiIzdQ0ApBAV
+ECFPMC07xNyIa9kxLqtgGUBFNRCCiMhIhRAxqkM+h4iSqUnI1KihEYkTtzlRj8HN
+6STKCiyHv/FLcNzeP/D/2Xd8XA4TTEUkAwqxBE2CMQIEAJMoJkZMF7EHjDLXJtsZ
+RxObuiwcDwk1eQJ/rbQM5hXrJfmDsELhuGOHLZsVGM52zo64TswxnDD/2xaLRQIe
+NVYV8bA7mB78oxLULZvyIjmhkrlRy7GFgMiRRszyZEVJAxgoEKl5AtsZsVwWtDyE
+rCo8EgDeGFbJJSmQoUKYjFVdNYFGeBGKKhPNZCaBBGGGNU0xKIBUQ0jHABJVBZTH
+JrxBiGXBy1VhO0JA4jZJiEtGrZBNYnGXCTVtdzZP9CWk+CYlTfAWzJcyJe3v2l16
+NNl3mbkd893PFW/9RQ8yD6YPvUl8PGft1uz44PcFSwZH5ubfEPe2Tagrq501cGvA
+zb7q3g73nfFnJYUWnr0Zyhy8WdKb1d/4pPzL3c91jemj6SUNx4uSnnWuSbu/e8PH
+nsRT+z4dGVmzR7sxbX/NzOTTuHbZl7Lhc11fTxS2/dxyPb01VX9Y3XHu6KJJ79cn
+zyqNJx5auXTDqqfFU8+3H0humX6teCAjJ7/N/6tUPlZ/ccVhJ2fjjJET9FULbH41
+T854kbWrg+Zvei3cCyRVZiwbo01Xyfvc2mAIdK90qjp3vWv62Zv7PLWpdHWzv+fl
+m3WjDbNbUV93w2JreKiiw9j/YXn9hcPB3xtlRps=
+=8R6y
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/andrelug
+
+==================================================================
