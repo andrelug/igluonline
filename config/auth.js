@@ -6,8 +6,8 @@ if('development' == app.get('env')) {
     module.exports = {
 
 	    'facebookAuth' : {
-		    'clientID' 		: '1519238171626381', // your App ID
-		    'clientSecret' 	: '5c99dddcfef93210d4b2101c5c196d07', // your App Secret
+		    'clientID' 		: '1448953141868410', // your App ID
+		    'clientSecret' 	: 'a9e65827d121ccfc50269d591fdc1406', // your App Secret
 		    'callbackURL' 	: 'http://localhost:3000/auth/facebook/callback'
 	    },
 
@@ -28,8 +28,8 @@ if('development' == app.get('env')) {
     module.exports = {
 
 	    'facebookAuth' : {
-		    'clientID' 		: '253873004991221', // your App ID
-		    'clientSecret' 	: 'c7fe9bd5f0188bb89e104f82417ae34a', // your App Secret
+		    'clientID' 		: '1448953141868410', // your App ID
+		    'clientSecret' 	: 'a9e65827d121ccfc50269d591fdc1406', // your App Secret
 		    'callbackURL' 	: 'http://websites.igluonline.com/auth/facebook/callback'
 	    },
 
